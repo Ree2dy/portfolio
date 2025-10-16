@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Samuel & Oliver Reedy</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .portfolio-card {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            padding: 3rem;
+            margin: 1rem;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-decoration: none;
+            color: inherit;
+        }
+        
+        .portfolio-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.2);
+            text-decoration: none;
+            color: inherit;
+        }
+        
+        .portfolio-title {
+            font-size: 2.5rem;
+            font-weight: 900;
+            margin-bottom: 1rem;
+            color: #333;
+        }
+        
+        .portfolio-subtitle {
+            font-size: 1.2rem;
+            color: #666;
+            margin-bottom: 2rem;
+        }
+        
+        .main-title {
+            text-align: center;
+            color: white;
+            font-size: 3rem;
+            font-weight: 900;
+            margin-bottom: 3rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        
+        .btn-enter {
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            color: white;
+            border: none;
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-enter:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            color: white;
+        }
+        
+        .coming-soon {
+            opacity: 0.6;
+            pointer-events: none;
+        }
+        
+        .coming-soon-badge {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: #ffc107;
+            color: #333;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="main-title">Welcome to Our Portfolio</h1>
+        <div class="row">
+            <div class="col-md-6">
+                <a href="Samuel/" class="portfolio-card d-block text-center">
+                    <h2 class="portfolio-title">Samuel Reedy</h2>
+                    <p class="portfolio-subtitle">Mechatronics Engineer</p>
+                    <p class="mb-4">Graduate Mechatronics Engineer from the University of Auckland specializing in integrated systems, robotics, and software development.</p>
+                    <button class="btn btn-enter">Enter Portfolio</button>
+                </a>
+            </div>
+            <div class="col-md-6">
+                <div class="portfolio-card text-center position-relative coming-soon">
+                    <div class="coming-soon-badge">Coming Soon</div>
+                    <h2 class="portfolio-title">Oliver Reedy</h2>
+                    <p class="portfolio-subtitle">[Your Brother's Title]</p>
+                    <p class="mb-4">Portfolio coming soon...</p>
+                    <button class="btn btn-enter" disabled>Enter Portfolio</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

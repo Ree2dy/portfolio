@@ -1,0 +1,10 @@
+{
+    "title": "CNN Image Depth Extraction",
+    "short_title": "CNN Depth Extraction",
+    "description": "University Honours Research Project that explored the use of a bio-inspired Convolutional Neural Network to extract depth from images. The project was completed in 2023 and was supervised by Luke Hallum",
+    "image": "static/images/mecheng_700/Model_step_through.png",
+    "link": "static/pdf/MECHENG 700 - Final Report - sree205.pdf",
+    "year": 2023,
+    "tags": ["University", "Python", "CNN", "Matlab"],
+    "icon": "fa-graduation-cap"
+}

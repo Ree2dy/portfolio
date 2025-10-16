@@ -1,0 +1,28 @@
+{
+    "title": "Revive Our Gulf",
+    "position": "Mechatronics Engineer",
+    "company": "Revive Our Gulf",
+    "logo": "static/images/revive our gulf/logo.png",
+    "description": "Built and integrated an underwater camera system to monitor and track the position of the invasive seaweed species Caulerpa.",
+    "background_colour": "#f0f0f0",
+    "image": "static/images/revive our gulf/ROV.jpg",
+    "images": [
+        "static/images/revive our gulf/ROV.jpg",
+        "static/images/revive our gulf/internals.jpg",
+        "static/images/revive our gulf/UI.png"
+    ],
+    "what": [
+        "Develop and integrate a camera system to capture high resolution transects of the sea floor.",
+        "Improve and finalise a Blue OS GPX Extension to record the ROVs estimated location"
+    ],
+    "how": [
+        "Utilised Python to capture buffer data from the camera and stream it to a host computer.",
+        "Developed and refined the GPX recording software in C++ to accurately capture the ROVs DVL estimated location for transects."
+    ],
+    "result": [
+        "The ROV was able to capture high definition images of Caulerpa, and return to the same location with a 100% success rate"
+    ],
+    "link": "#",
+    "period": "7/2024 - Present ",
+    "tags": ["Work", "Python", "C++", "HTML / CSS", "Javascript", "Ki CAD", "3D Printing", "Docker"]
+}

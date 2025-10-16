@@ -1,0 +1,247 @@
+/* General styles */
+body {
+    background-color: rgb(5,8,22);
+    color: rgb(255, 255, 255);
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    background-color: rgb(5,8,22);
+    color: rgb(255, 255, 255);
+    padding: 10px 0;
+}
+
+.signature {
+    position: absolute;
+    width: 100%; /* Adjust as needed */
+    top: 0;
+    height: auto; /* Maintain aspect ratio */
+    opacity: 0.5; /* Adjust opacity as needed */
+    z-index: -1; /* Ensure it appears behind the text */
+}
+
+
+.custom-nav-link {
+    color: rgb(170,166,195);
+}
+
+.custom-nav-link:hover {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+/* Name styles */
+.name {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    font-size: 4rem; /* Adjust the size as needed */
+    font-weight: bold; 
+    color: white;
+}
+
+.section {
+    margin-top: 100px;
+}
+
+.highlight {
+    color: rgb(145,94,255); /* Replace with your desired color */
+}
+
+.role {
+    font-size: 1.5rem;
+}
+
+.headshot {
+    box-shadow: 0 0 20px 10px rgba(145, 94, 255, 0.75);
+}
+
+.list-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+
+.list-emoji {
+    margin-right: 10px;
+    flex-shrink: 0;
+    align-self: flex-start; /* Align the emoji to the top */
+}
+
+.btn-contact {
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin: 10px;
+}
+
+.btn-mail {
+    background: linear-gradient(45deg, rgb(94, 118, 255), rgb(94, 191, 255));
+}
+
+.btn-phone {
+    background: linear-gradient(45deg, rgb(56, 187, 56), rgb(63, 255, 56));
+}
+
+.btn-github {
+    background: linear-gradient(45deg, rgb(145, 94, 255), rgb(255, 94, 255));
+}
+
+.card {
+    border-radius: 5px;
+    overflow: hidden;
+    border: none;
+}
+
+.card-title {
+    font-weight: bold;
+    font-size: 1.5rem; /* Adjust the size as needed */
+    color: rgb(255, 255, 255);
+}
+
+.section-title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900; /* Use the 900 weight for Black */
+    font-weight: bolder;
+    font-size: 3rem; /* Adjust the size as needed */
+}
+
+.title-featured {
+    color: rgb(255, 255, 255); /* Change to desired color for featured title */
+}
+
+.title-other {
+    color: rgb(255, 255, 255); /* Change to desired color for other title */
+}
+
+/* Inherit styles from .title */
+.title-featured,
+.title-other {
+    font-weight: bolder;
+    font-size: 3rem; /* Adjust the size as needed */
+}
+
+.card-tags-container {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+.card-icon {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 1.5rem;
+    color: white;
+}
+
+/* Image container styles */
+.project-info-container {
+    width: 100%;
+    padding: 10px;
+}
+
+.card-img-top {
+    transition: transform 0.6s ease;
+    overflow: hidden;
+    object-fit: cover;
+    aspect-ratio: 16/9;
+    background-color: rgb(255, 255, 255);
+}
+
+/* Project tags styles */
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+/* Button styles */
+#filter-tags .btn {
+    cursor: pointer;
+}
+
+.card {
+    background-color: rgb(28, 22, 61);
+    color: rgb(170,166,195);
+    border: none;
+}
+
+.card-hover{
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.card-hover:hover {
+    transform: scale(1.05);
+}
+
+.card-img-overlay {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.card-img-fit{
+    object-fit: cover;
+    aspect-ratio: 4/3;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.card-deck {
+    padding: 0;
+}
+
+.primary {
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+
+.secondary {
+    color: rgb(255, 255, 255);
+}
+
+.core {
+    color: rgb(170,166,195);
+}
+
+.btn-work {
+    background-color: rgb(28, 22, 61);
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+}
+
+.logo {
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    aspect-ratio: 1/1; /* Maintain a 1:1 aspect ratio */
+}
+
+.work-img {
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.work-info-container {
+    overflow: hidden;
+}
+
+.card-project-other {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit color from parent */
+}
+
+.card-project-other:hover {
+    text-decoration: none; /* Ensure no underline on hover */
+    color: inherit; /* Ensure color does not change on hover */
+}
