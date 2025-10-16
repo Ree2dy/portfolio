@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Oliver's Portfolio</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Volkhov:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="static/CSS/styles.css">
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark  fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Oliver Reedy</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#profile">Profile</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experience">Past Experience</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+<header class="py-5 bg-dark" id="profile" style="z-index: -100;">
+  <div class="container mt-5 position-relative" style="z-index: 1;">
+
+    <div class="row">
+      <div class="col-md text-center">
+        <img src="static/images/ProfilePic.webp" class="img-fluid mx-auto d-block" style="max-width: 500px; width: 100%; height: auto;" alt="Profile">
+        <div style="height: 4px; background-color: white; width: 80%; margin: 0 auto; margin-top: 0px; border-radius: 5rem;"></div>
+
+
+      </div>
+
+        <div class="col-md d-flex flex-column justify-content-center align-items-center text-center text-white" style="min-height: 100%;">
+          <h1 class="mt-3">Oliver Reedy</h1>
+          <h2 class="mb-3 purple border-5 border-white">Mechatronics Graduate</h2>
+          <div class="d-flex flex-column flex-sm-row gap-2 justify-content-center">
+            <a href="https://github.com/OliverReedy" target="_blank" class="btn btn-outline-light rounded-pill">
+              <i class="fab fa-github"></i> GitHub
+            </a>
+            <a href="https://www.linkedin.com/in/oliver-reedy/" target="_blank" class="btn btn-outline-light rounded-pill">
+              <i class="fab fa-linkedin"></i> LinkedIn
+            </a>
+            <a href="#" onclick="copyEmail()" class="btn btn-outline-light rounded-pill">
+              <i class="fas fa-envelope"></i> Email
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</header>
+
+  <!-- Main Content -->
+  <main class="bg-dark text-white py-5">
+
+    <section class="container my-5 py-5" id="experience">
+      <div class="row">
+        <div class="col-lg-3 col-12">
+          <h2>Work Experience </h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div class="solid-line"></div>
+        </div>
+      </div>
+      <div id="carouselExampleCaptions" class="carousel slide text-white" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+      
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class=" job-card d-flex align-items-center justify-content-center reemoon bg-gradient rounded-card border-white" style="height: 300px; border: 2px solid white; border-radius: 50px;">
+            <div class="px-5 mx-auto" style="max-width: 1000px;">
+              <img src="static/images/reemoon-logo.webp" alt="" class="logo-corner">
+              <h4 class="text-center">Reemoon Australasia</h4>
+              <h5 class="text-center">Mechatronics Intern</h5>
+              <p>Optimized optical systems and built prototypes for next-gen fruit sorting tech. Worked on spectrometry, lens design, and object recognition using Python, OpenCV, and hands-on fabrication.</p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="job-card  d-flex align-items-center justify-content-center sealegs bg-gradient  rounded-card" style="height: 300px; border: 2px solid white; border-radius: 50px;;">
+            <div class="text-start px-5 mx-auto" style="max-width: 1000px;">
+              <img src="static/images/sealegs-logo.webp" alt="" class="logo-corner">
+              <h4 class="text-center">Sealegs</h4>
+              <h5 class="text-center">Mechatronics Intern</h5>
+              <p>Developed autonomous navigation and solar power systems for a marine drone. Led testing and refinement of control algorithms, achieving smooth, accurate tracking on the water.</p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+              <div class="job-card d-flex align-items-center justify-content-center lux bg-gradient  rounded-card" style="height: 300px; border: 2px solid white; border-radius: 50px;;">
+                <div class="text-start px-5 mx-auto" style="max-width: 1000px;">
+                  <img src="static/images/lux-logo.webp" alt="" class="logo-corner">
+              <h4 class="text-center">Lux Solar</h4>
+              <h5 class="text-center">Mechatronics Intern</h5>
+                  <p>Built a Wi-Fi-enabled power monitor for solar panel systems. Designed for remote energy tracking using low-cost micro-controllers, with a focus on scalability and easy deployment.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+    </section>
+      
+
+
+    <section class="container my-5 py-5" id="skills">
+      <!-- Title section -->
+      <div class="row mb-4">
+        <div class="col">
+          <h2>Skills</h2>
+          <div class="solid-line"></div>
+        </div>
+      </div>
+
+      <!-- Content section -->
+      <div class="row" >
+        <!-- Left text column -->
+        <div class="col-lg-4 mb-4">
+          <p>With a foundation in Mechatronics Engineering, I bring a multidisciplinary skill set that bridges hardware and software. I thrive in hands-on environments that demand both technical breadth and attention to detail.</p>
+        </div>
+
+        <!-- Right card column -->
+        <div class="col-lg-8">
+          <div class="row row-cols-1 row-cols-md-2 g-4">
+            <!-- Card 1 -->
+            <div class="col">
+              <div class="card h-100 text-center bg-primary bg-gradient rounded-card border-white border-2">
+                <div class="card-body d-flex flex-column align-items-center justify-content-center" style="height: 100%;">
+                  <i class="fas fa-code fa-4x mb-3"></i>
+                  <h5 class="card-title">Programming</h5>
+                  <p class="card-text">Adept with C/C++, C#, Python and more</p>
+                </div>
+              </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="col">
+              <div class="card h-100 text-center bg-success bg-gradient  rounded-card border-white border-2">
+                <div class="card-body d-flex flex-column align-items-center justify-content-center" style="height: 100%;">
+                  <i class="fas fa-microchip fa-4x mb-3"></i>
+                  <h5 class="card-title">Electronics</h5>
+                  <p class="card-text">Circuit design, PCB layout, soldering skills and embedded systems.</p>
+                </div>
+              </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="col">
+              <div class="card h-100 text-center bg-danger bg-gradient  rounded-card border-white border-2">
+                <div class="card-body d-flex flex-column align-items-center justify-content-center" style="height: 100%;">
+                  <i class="fas fa-robot fa-4x mb-3"></i>
+                  <h5 class="card-title">Robotics</h5>
+                  <p class="card-text">Mechanical design, control systems, and the integration of multiple disciplines.</p>
+                </div>
+              </div>
+            </div>
+            <!-- Card 4 -->
+            <div class="col">
+              <div class="card h-100 text-center bg-warning bg-gradient rounded-card border-white border-2">
+                <div class="card-body d-flex flex-column align-items-center justify-content-center" style="height: 100%;">
+                  <i class="fas fa-compass-drafting fa-4x mb-3"></i>
+                  <h5 class="card-title">Design</h5>
+                  <p class="card-text">CAD, 3D modeling, and general prototyping/fabrication.</p>
+                </div>
+              </div>
+            </div>
+          </div> 
+        </div> 
+      </div> 
+    </section> 
+
+    <section id="projects" class="container my-5 py-5">
+      <h2>Projects</h2>
+      <div class="solid-line"></div>
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 bg-danger bg-gradient border-white border-2 rounded-card">
+            <img src="static/images/DroneImage.webp" class="card-img-top rounded-card-image" alt="Drone"  style="padding: 45px  0px">
+            <div class="card-body">
+              <h5 class="card-title">Honors Project</h5>
+              <p class="card-text">Designing, manufacturing, and physical testing of a variable arm modification for a multi-rotor UAV.</p>
+              <a href="static/pdfs/HonorsProject-compressed.pdf" target="_blank" class="btn btn-light mb-0  rounded-pill">Read More</a>
+            </div>
+                       
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4 ">
+          <div class="card h-100 bg-warning bg-gradient border-white border-2 rounded-card">
+            <img src="static/images/BiomechHand.webp" class="card-img-top rounded-card-image " alt="BiomechHand">
+            <div class="card-body">
+              <h5 class="card-title">Biomechatronic Hand</h5>
+              <p class="card-text">Design and build of a biologically inspired gripper system with singular motor input.</p>
+              <a href="static/pdfs/BiomechatronicGripper.pdf" target="_blank" class="btn btn-light  rounded-pill">Read More</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4 ">
+          <div class="card h-100 bg-danger bg-gradient border-white border-2 rounded-card">
+            <img src="static/images/FireFightingRobot.webp" class="card-img-top rounded-card-image" alt="Drone">
+            <div class="card-body">
+              <h5 class="card-title">Firefighting Robot</h5>
+              <p class="card-text">State System behaviour control based implementation of fire fighting robot prototype.</p>
+              <a href="static/pdfs/FirefightingRobot.pdf" target="_blank" class="btn btn-light  rounded-pill">Read More</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 bg-success bg-gradient border-white border-2 rounded-card">
+            <img src="static/images/EncoderProject.webp" class="card-img-top rounded-card-image" alt="Drone">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Encoder Project</h5>
+              <p class="card-text">Building of a motor encoder system.</p>
+              <a href="static/pdfs/EncoderProjectReport.pdf" target="_blank" class="btn btn-light mt-auto align-self-start  rounded-pill">Read More</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 bg-success bg-gradient border-white border-2 rounded-card">
+            <img src="static/images/XYPlaner.webp" class="card-img-top rounded-card-image" alt="Drone">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">XY Planer</h5>
+              <p class="card-text">Design and programming of a planer worktable capable of accurate sketching/motion control.</p>
+              <a href="static/pdfs/XYPlanerReport.pdf" target="_blank" class="btn btn-light mt-auto align-self-start rounded-pill">Read More</a>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 bg-primary bg-gradient border-white border-2 rounded-card">
+            <canvas class="card-img-top rounded-card-image" id="ant-preview" width="300" height="300"></canvas>
+            <div class="card-body">
+              <h5 class="card-title">Cellular Automation</h5>
+              <p class="card-text">Simple cellular automaton.</p>
+              <a href="static/HTML/langtons-ant.html" target="_blank" class="btn btn-light mb-0 rounded-pill">Read more</a>
+            </div>
+          </div>
+        </div>
+
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-4">
+    <div class="container">
+      <p class="mb-0">&copy; 2025 Oliver Reedy</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  <script src="static/JS/scripts.js"></script>
+</body>
+</html>

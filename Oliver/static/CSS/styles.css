@@ -1,0 +1,177 @@
+/* ===== Global Styles ===== */
+:root {
+  --PrimaryColor: #144c44;
+  --SecondaryColor: #47b67b;
+  --TertiaryColor: #3d4040;
+  --BackgroundColor: #ffffff;
+  --TextColor: #333;
+  --AccentColor: #296392;
+
+  --Robotics: #b34141;
+  --Software: #94578c;
+  --Hardware: #296392;
+  --Creative: #33e6d7;
+}
+
+html {
+  scroll-padding-top: 60px; /* height of your fixed navbar */
+  scroll-behavior: smooth;  /* optional for smooth scrolling */
+}
+
+body{
+    /* font-family: "Volkhov", serif;
+    font-weight: 400;
+    font-style: normal; */
+
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+@keyframes gridShift {
+  from { background-position: 0 0; }
+  to { background-position: 40px 40px; }
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image:
+    linear-gradient(to right, rgba(255,255,255,0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255,255,255,0.04) 1px, transparent 1px);
+  background-size: 40px 40px;
+  z-index: 0;
+  pointer-events: none;
+  animation: gridShift 8s linear infinite;
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+  background: radial-gradient(ellipse at top left, rgba(0, 149, 255, 0.15), transparent),
+              radial-gradient(ellipse at bottom right, rgba(255, 0, 166, 0.15), transparent);
+  pointer-events: none;
+}
+
+.section{
+  background-color: #296392;
+}
+
+.section-title{
+  background-color: #aa433f;
+}
+
+.section-writing{
+  background-color: #3f8ccc;
+}
+
+.custom-bg-blue {
+  background-color: #4a90e2;
+}
+
+.rounded-card{
+  border-radius: 50px;
+}
+
+.rounded-card-image{
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+}
+
+.reemoon{
+  background-color: rgba(5, 140, 66,0.9);
+}
+
+.sealegs{
+  background-color: rgba(33, 158, 188,0.9);
+}
+
+.lux{
+  background-color: rgba(251, 133, 0,0.9);
+}
+
+.purple{
+  color: rgb(111, 0, 255);;
+}
+
+/* SECTION PROFILE */
+.navbar {
+  transition: background-color 1.3s ease, box-shadow 1.3s ease;
+}
+
+.navbar.scrolled {
+  background-color: rgb(111, 0, 255);
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+.tight{
+  margin: 0rem;
+}
+
+.solid-line {
+  height: 2px;
+  width: 100%;
+  background-color: white;
+  margin: 1.5rem 0;
+  border-radius: 10px;
+}
+
+.logo-corner {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  height: 40px;
+  width: auto;
+  filter: brightness(0) invert(1);
+  opacity: 1;
+  z-index: 10;
+}
+
+.logo-center {
+  height: 80px;   
+  width: auto;
+  filter: brightness(0) invert(1); 
+  display: block;
+  margin: 0 auto 1rem auto;  
+}
+
+@media (max-width: 576px) {
+  .logo-corner {
+    display: none;
+  }
+}
+
+.btn-light {
+    color: #000000;
+    background-color: #ffffff;
+}
+.btn-light:hover, .btn-light:focus, .btn-light:active, .btn-light.active, .open>.dropdown-toggle.btn-light {
+    color: #ffffff;
+    background-color: transparent;
+    border-color: #ffffff; 
+} 
+
+.card {
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+.job-card {
+  transition: transform 0.3s ease;
+  transform: scale(0.97);
+}
+
+.job-card:hover {
+  transform: scale(1);
+}
