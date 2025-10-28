@@ -1,0 +1,22 @@
+body {
+    background: linear-gradient(135deg, #2a1547, #0D1117) no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+/* Only add enhancements, not overrides */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-img-top {
+    transition: transform 0.3s ease;
+}
+
+.card:hover .card-img-top {
+    transform: scale(1.02);
+}
